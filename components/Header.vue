@@ -1,6 +1,6 @@
 <template>
-    <header class="fixed top-8 left-1/2 -translate-x-1/2 z-10 bg-white py-4 px-12 rounded-[44px] w-4/5 mx-auto drop-shadow-lg">
-        <nav class="text-gris text-[22px] font-poppins font-semibold flex justify-between items-center">
+    <header class="fixed top-8 left-1/2 -translate-x-1/2 z-10 bg-white py-4 px-12 rounded-[44px] w-4/5 mx-auto drop-shadow-lg bubble">
+        <nav class="text-gris text-[22px] font-poppins font-semibold flex justify-between items-center drop">
             <NuxtLink class="relative animate" to="/">Home</NuxtLink>
             <NuxtLink class="relative animate" to="/about">La Formation</NuxtLink>
             <NuxtLink class="relative animate" to="/">Le Département</NuxtLink>
@@ -33,5 +33,40 @@
     width: 100%;
 }
 
+.bubble {
+    animation: expand 1s ease-in-out;
+}
 
+@keyframes expand {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.drop {
+    animation: dropdown 1s ease-in-out;
+}
+
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        font-size: 0px;
+    }
+
+    80% {
+        opacity: 0;
+        transform: translateY(-10px);
+        /* font-size: 22px; */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        font-size: 22px;
+    }
+}
 </style>
