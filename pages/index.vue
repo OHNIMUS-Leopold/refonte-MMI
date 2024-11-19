@@ -24,12 +24,12 @@ const calculateHeight = () => {
 };
 
 onMounted(() => {
-  calculateHeight();
-  window.addEventListener("resize", calculateHeight); 
+    calculateHeight();
+    window.addEventListener("resize", calculateHeight); 
 });
 
 onUnmounted(() => {
-  window.removeEventListener("resize", calculateHeight); 
+    window.removeEventListener("resize", calculateHeight); 
 });
 
 </script>
