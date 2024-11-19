@@ -1,5 +1,5 @@
 <template>
-    <header class="absolute top-12 bg-white py-4 px-12 rounded-[44px] w-4/5 left-1/2 -translate-x-1/2 drop-shadow-lg">
+    <header class="fixed top-8 left-1/2 -translate-x-1/2 z-10 bg-white py-4 px-12 rounded-[44px] w-4/5 mx-auto drop-shadow-lg">
         <nav class="text-gris text-[22px] font-poppins font-semibold flex justify-between items-center">
             <NuxtLink class="relative animate" to="/">Home</NuxtLink>
             <NuxtLink class="relative animate" to="/about">La Formation</NuxtLink>
