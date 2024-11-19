@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-gray-300 py-20">
-        <h1 class="text-3xl">
-            Hello world!
-        </h1>
-    </div>
+    <main>
+        <div class="p-5">
+            <img class="w-full" src="../assets/images/bitmap/home-test.png" alt="">
+        </div>
+    </main>
 </template>
