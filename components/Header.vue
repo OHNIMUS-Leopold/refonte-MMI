@@ -6,9 +6,7 @@
             <NuxtLink class="relative animate" to="/">Le Département</NuxtLink>
             <NuxtLink class="relative animate" to="/">International</NuxtLink>
             <NuxtLink class="relative animate" to="/">Contact</NuxtLink>
-            <div class="font-medium text-xl py-[10px] px-[22px] outline outline-jaune bg-jaune rounded-3xl hover:bg-white duration-500">
-                <NuxtLink to="/">Candidater</NuxtLink>
-            </div>
+            <NuxtLink to="/" class="font-medium text-xl py-2 px-5 border-solid border-[3px] border-jaune bg-jaune rounded-3xl hover:bg-white duration-500">Candidater</NuxtLink>    
         </nav>
     </header>
 </template>
@@ -22,7 +20,7 @@
     position: absolute;
     height: 2px;
     left: 0;
-    bottom: 3px;
+    bottom: 2px;
     width: 26px;
     background: #FFD53E;
     transition: width .4s;
@@ -34,12 +32,15 @@
 }
 
 .bubble {
-    animation: expand 1s ease-in-out;
+    animation: expand 2s ease-in-out;
 }
 
 @keyframes expand {
     0% {
         width: 5%;
+    }
+    50% {
+        width: 80%;
     }
     100% {
         width: 80%;
@@ -47,26 +48,39 @@
 }
 
 .drop {
-    animation: dropdown 1s ease-in-out;
+    animation: drop 2s ease-in-out;
 }
 
-@keyframes dropdown {
+@keyframes drop {
     0% {
+        transform: translateY(-200px); 
         opacity: 0;
-        transform: translateY(20px);
         font-size: 0px;
     }
-
-    80% {
+    30% {
+        transform: translateY(-200px); 
         opacity: 0;
-        transform: translateY(-10px);
-        /* font-size: 22px; */
+        font-size: 14px;
     }
-
-    100% {
+    40% {
+        transform: translateY(-200px); 
+        opacity: 0;
+        font-size: 22px;
+    }
+    55% {
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(0px); 
         opacity: 1;
-        transform: translateY(0);
+        font-size: 22px;
+    }
+    100% {
+        transform: translateY(0px); 
+        opacity: 1;
         font-size: 22px;
     }
 }
+
+
 </style>
