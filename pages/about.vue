@@ -9,7 +9,7 @@
                 loop
                 class="w-full h-full"
                 @ended="onVideoEnded"
-            ></video>
+            />
         </div>
 
 
@@ -17,8 +17,8 @@
             <button
                 v-for="year in otherYears"
                 :key="year"
-                @click="changeYear(year)"
                 class="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-200"
+                @click="changeYear(year)"
             >
                 Les {{ year }}ème année
             </button>

@@ -1,8 +1,8 @@
 <template>
     <main>
         <div class="my-[2vh]">
-            <div class="absolute w-[97vw] left-1/2 -translate-x-1/2 bg-black opacity-40 rounded-xl" :style="{ height: containerHeight + 'px' }"></div>
-            <video id="intro" autoplay loop muted src="../assets/videos/Video_introduction_MMI/Video_introduction_MMI.mp4" class="rounded-xl w-[97vw] mx-auto"></video>
+            <div class="absolute w-[97vw] left-1/2 -translate-x-1/2 bg-black opacity-40 rounded-xl" :style="{ height: containerHeight + 'px' }"/>
+            <video id="intro" autoplay loop muted src="../assets/videos/Video_introduction_MMI/Video_introduction_MMI.mp4" class="rounded-xl w-[97vw] mx-auto"/>
         </div>
         <div class="static ">
             <p class="">bla</p>
@@ -16,7 +16,7 @@ const containerHeight = ref(0);
 
 const calculateHeight = () => {
     const width = window.innerWidth * 0.97;
-    let height = Math.floor((width * 9) / 16);
+    const height = Math.floor((width * 9) / 16);
     // if (width >= 1020) {
     //     height -= 10;
     // }
