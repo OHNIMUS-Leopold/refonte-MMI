@@ -1,31 +1,31 @@
 <template>
-    <div class="relative w-full h-screen flex items-center justify-center bg-gray-900">
-        <div class="relative w-full h-full overflow-hidden">
-            <video
-                v-if="currentVideo"
-                :src="currentVideo"
-                autoplay
-                muted
-                loop
-                class="w-full h-full"
-                @ended="onVideoEnded"
-            />
-        </div>
-
-
-        <div class="absolute bottom-10 flex space-x-4">
-            <button
-                v-for="year in otherYears"
-                :key="year"
-                class="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-200"
-                @click="changeYear(year)"
-            >
-                Les {{ year }}ème année
-            </button>
-        </div>
-    </div>
     <div>
-        dzkdziub
+        <div class="relative w-full h-screen flex items-center justify-center bg-gray-900">
+            <div class="relative w-full h-full overflow-hidden">
+                <video
+                    v-if="currentVideo"
+                    :src="currentVideo"
+                    autoplay
+                    muted
+                    loop
+                    class="w-full h-full"
+                    @ended="onVideoEnded"
+                />
+            </div>
+            <div class="absolute bottom-10 flex space-x-4">
+                <button
+                    v-for="year in otherYears"
+                    :key="year"
+                    class="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-200"
+                    @click="changeYear(year)"
+                >
+                    Les {{ year }}ème année
+                </button>
+            </div>
+        </div>
+        <div>
+            dzkdziub
+        </div>
     </div>
 </template>
   
