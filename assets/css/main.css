@@ -20,14 +20,14 @@
 }
 
 .body {
-    @apply font-manrope font-medium text-2xl;
+    @apply font-manrope font-medium text-lg;
 }
 
 
 /* Mobile */
 
 .h1-m {
-    @apply font-poppins font-bold text-4xl;
+    @apply font-poppins font-semibold text-4xl;
 }
 
 .h2-m {
