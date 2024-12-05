@@ -1,5 +1,24 @@
+<script setup lang="ts">
+const headerBreakpoint = ref(false);
+
+const updateScreenWidth = () => {
+  if (typeof window !== 'undefined') {
+    headerBreakpoint.value = window.innerWidth > 1280;
+  }
+};
+
+onMounted(() => {
+  updateScreenWidth(); 
+  window.addEventListener('resize', updateScreenWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateScreenWidth);
+});
+</script>
+
 <template>
-    <header class="fixed top-8 left-1/2 -translate-x-1/2 z-10 bg-white py-2 px-4 rounded-[44px] w-4/5 mx-auto drop-shadow-lg bubble">
+    <header v-if="headerBreakpoint" class="fixed top-8 left-1/2 -translate-x-1/2 z-10 bg-white py-2 px-4 rounded-[44px] w-4/5 mx-auto drop-shadow-lg bubble">
         <nav class="text-gris text-xl font-poppins font-semibold flex justify-between items-center drop">
             <NuxtLink class="relative" to="/">
                 <img src="@/assets/images/svg/mmi_logo-header.svg" alt="Logo" class="h-8 pl-2 pb-1">
@@ -10,6 +29,10 @@
             <NuxtLink class="relative animate" to="/">Contact</NuxtLink>
             <NuxtLink to="/" class="font-medium text-lg font-manrope py-1 px-6 border-solid border-[3px] border-jaune bg-jaune rounded-3xl hover:bg-white duration-500">Candidater</NuxtLink>    
         </nav>
+    </header>
+
+    <header v-else>
+        ddz
     </header>
 </template>
 
