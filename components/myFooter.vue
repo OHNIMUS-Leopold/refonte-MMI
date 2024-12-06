@@ -1,11 +1,11 @@
 <template>
-    <footer class="flex justify-between items-center bg-white py-14 px-11 border-t-2 border-jaune">
+    <footer class="flex flex-wrap justify-between gap-y-4 sm:gap-x-2 md:gap-x-20 xl:gap-0 items-center bg-white py-14 px-11 border-t-2 border-jaune">
         <img src="@/assets/images/svg/mmi_logo-header.svg" alt="Logo">
         <div class="grid grid-cols-1 text-gris font-poppins text-base text-center">
             <p class="font-semibold">MMI MONTBÉLIARD</p>
             <p class="font-light">Métiers du multimédia et de l'internet</p>
             <p>
-                <span class="font-semibold">IUT</span><span class="font-light">NORD FRANCHE-COMTÉ</span>
+                <span class="font-semibold">IUT </span><span class="font-light">NORD FRANCHE-COMTÉ</span>
             </p>
         </div>
         <NuxtLink class="font-poppins font-medium text-base text-gris" to="/mentions-legales">Mentions légales</NuxtLink>
@@ -21,6 +21,6 @@
                 <img class="h-10" src="@/assets/images/svg/icn/icon-instagram.svg" alt="Instagram">
             </a>
         </div>
-        <NuxtLink to="/candidater" class="font-medium text-xl font-poppins py-[10px] px-6 border-solid border-[3px] border-jaune bg-jaune rounded-xl hover:bg-white duration-500">Candidater</NuxtLink>    
+        <NuxtLink to="/candidater" class="font-medium text-lg font-poppins py-[10px] px-6 border-solid border-[3px] border-jaune bg-jaune rounded-xl hover:bg-white duration-500">Candidater</NuxtLink>    
     </footer>
 </template>
