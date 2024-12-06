@@ -2,6 +2,7 @@
 const headerBreakpoint = ref(false);
 const isAnimated = ref(false);
 const isHidden = ref(false);
+const lastScrollTop = ref(0);
 
 const updateScreenWidth = () => {
     if (typeof window !== 'undefined') {
@@ -22,8 +23,15 @@ onUnmounted(() => {
 });
 
 const handleScroll = () => {
-    isAnimated.value = false; 
-    isHidden.value = true;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop.value) {
+        isAnimated.value = false;
+        isHidden.value = true;
+    } else {
+        isAnimated.value = true;
+        isHidden.value = false;
+    }
+    lastScrollTop.value = scrollTop <= 0 ? 0 : scrollTop; 
 };
 </script>
 
