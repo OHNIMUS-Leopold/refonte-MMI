@@ -41,11 +41,11 @@ const handleScroll = () => {
             <NuxtLink class="relative" to="/">
                 <img src="@/assets/images/svg/mmi_logo-header.svg" alt="Logo" class="h-8 pl-2 pb-1">
             </NuxtLink>
-            <NuxtLink class="relative animate" to="/about">La Formation</NuxtLink>
-            <NuxtLink class="relative animate" to="/">Le Département</NuxtLink>
-            <NuxtLink class="relative animate" to="/">International</NuxtLink>
-            <NuxtLink class="relative animate" to="/">Contact</NuxtLink>
-            <NuxtLink to="/" class="font-medium text-lg font-manrope py-1 px-6 border-solid border-[3px] border-jaune bg-jaune rounded-3xl hover:bg-white duration-500">Candidater</NuxtLink>    
+            <NuxtLink class="relative animate" to="/la-formation">La Formation</NuxtLink>
+            <NuxtLink class="relative animate" to="/le-departement">Le Département</NuxtLink>
+            <NuxtLink class="relative animate" to="/international">International</NuxtLink>
+            <NuxtLink class="relative animate" to="/contact">Contact</NuxtLink>
+            <NuxtLink to="/candidater" class="font-medium text-lg font-manrope py-1 px-6 border-solid border-[3px] border-jaune bg-jaune rounded-3xl hover:bg-white duration-500">Candidater</NuxtLink>    
         </nav>
     </header>
 
