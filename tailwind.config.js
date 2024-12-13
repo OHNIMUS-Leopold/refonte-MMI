@@ -20,6 +20,9 @@ export default {
         poppins: "Poppins, sans-serif",
         manrope: "Manrope, sans-serif",
       },
+      screens: {
+        'tablet': '640px',
+      },
     },
   },
   plugins: [],
