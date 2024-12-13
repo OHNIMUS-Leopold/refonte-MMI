@@ -4,10 +4,10 @@
             <div class="relative w-full h-full overflow-hidden">
                 <video
                     v-for="video in allVideos"
-                    :key="video.name"
-                    :src="video.src"
                     v-show="currentVideo === video.name"
+                    :key="video.name"
                     ref="videos"
+                    :src="video.src"
                     autoplay
                     muted
                     loop

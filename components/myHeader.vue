@@ -67,13 +67,13 @@ const handleScroll = () => {
                     <img src="@/assets/images/svg/icn/close-menu.svg" alt="Fermer le menu">
                 </button>
             </div>
-            <NuxtLink @click="toggleMenu" class="relative animate" to="/">Accueil</NuxtLink>
-            <NuxtLink @click="toggleMenu" class="relative animate" to="/la-formation">La Formation</NuxtLink>
-            <NuxtLink @click="toggleMenu" class="relative animate" to="/le-departement">Le Département</NuxtLink>
-            <NuxtLink @click="toggleMenu" class="relative animate" to="/international">International</NuxtLink>
-            <NuxtLink @click="toggleMenu" class="relative animate" to="/contact">Contact</NuxtLink>
-            <hr class="border-t-2 border-noir" style="width: calc(100% - 20px);" />
-            <NuxtLink @click="toggleMenu" to="/candidater" class="font-medium text-lg font-manrope py-1 px-6 border-solid border-[3px] border-jaune bg-jaune rounded-3xl hover:bg-white duration-500">Candidater</NuxtLink>    
+            <NuxtLink class="relative animate" to="/" @click="toggleMenu">Accueil</NuxtLink>
+            <NuxtLink class="relative animate" to="/la-formation" @click="toggleMenu">La Formation</NuxtLink>
+            <NuxtLink class="relative animate" to="/le-departement" @click="toggleMenu">Le Département</NuxtLink>
+            <NuxtLink class="relative animate" to="/international" @click="toggleMenu">International</NuxtLink>
+            <NuxtLink class="relative animate" to="/contact" @click="toggleMenu">Contact</NuxtLink>
+            <hr class="border-t-2 border-noir" style="width: calc(100% - 20px);" >
+            <NuxtLink to="/candidater" class="font-medium text-lg font-manrope py-1 px-6 border-solid border-[3px] border-jaune bg-jaune rounded-3xl hover:bg-white duration-500" @click="toggleMenu">Candidater</NuxtLink>    
             <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex justify-between space-x-6 mx-auto">
                 <a href="https://www.facebook.com/mmimontbeliard/?locale=fr_FR">
                     <img class="h-8" src="@/assets/images/svg/icn/icon-facebook.svg" alt="Facebook">
