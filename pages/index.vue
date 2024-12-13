@@ -25,7 +25,9 @@ const calculateHeight = () => {
 };
 
 onMounted(() => {
-    calculateHeight();
+    setTimeout(() => {
+        calculateHeight();
+    }, 80); 
     window.addEventListener("resize", calculateHeight); 
 });
 
