@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import heroImg from '../assets/images/bitmap/home-test.png';
+</script>
+
 <template>
-    <div/>
+    <main>
+        <MyHero :image=heroImg alt="" title="Candidater"/>
+    </main>
 </template>
