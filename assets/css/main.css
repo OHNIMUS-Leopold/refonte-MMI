@@ -5,39 +5,43 @@
 @tailwind utilities;
 
 /* Custom Hedings */
-/* Desktop */
-
-.h1 {
-    @apply font-poppins font-semibold text-7xl;
-}
-
-.h2 {
-    @apply font-poppins font-bold text-5xl;
-}
-
-.h3 {
-    @apply font-poppins font-bold text-4xl;
-}
-
-.body {
-    @apply font-manrope font-medium text-lg;
-}
-
 
 /* Mobile */
 
-.h1-m {
+h1 {
     @apply font-poppins font-semibold text-4xl;
 }
 
-.h2-m {
+h2 {
     @apply font-poppins font-bold text-2xl;
 }
 
-.h3-m {
+h3 {
     @apply font-poppins font-bold text-xl;
 }
 
-.body-m {
+p {
     @apply font-manrope font-medium text-base;
 }
+
+
+/* Tablet & Desktop */
+
+@media (min-width: 768px) { 
+    h1 {
+        @apply font-poppins font-semibold text-7xl;
+    }
+
+    h2 {
+        @apply font-poppins font-bold text-5xl;
+    }
+    
+    h3 {
+        @apply font-poppins font-bold text-4xl;
+    }
+    
+    p {
+        @apply font-manrope font-medium text-lg;
+    }
+}
+
