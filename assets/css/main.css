@@ -51,3 +51,14 @@ p {
         @apply font-poppins font-semibold text-7xl;
     }
 }
+
+
+.margin {
+    margin: 56px 24px;
+}
+
+@media (min-width: 768px) { 
+    .margin {
+        margin: 96px 56px;
+    }
+}
