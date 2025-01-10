@@ -1,6 +1,6 @@
 <template>
     <footer class="grid grid-cols-1 justify-items-center gap-6 items-center md:flex md:gap-y-4 md:gap-x-6 md:flex-wrap md:justify-between  bg-white py-14 px-11 border-t-2 border-jaune">
-        <img src="@/assets/images/svg/mmi_logo-header.svg" class="w-28" alt="Logo">
+        <img src="@/assets/images/svg/mmi_logo-header.svg" class="w-28" alt="Logo MMI">
         <div class="grid grid-cols-1 text-gris font-poppins text-base text-center">
             <p class="font-semibold">MMI MONTBÉLIARD</p>
             <p class="font-light">Métiers du multimédia et de l'internet</p>

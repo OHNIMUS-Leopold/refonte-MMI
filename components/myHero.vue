@@ -12,7 +12,7 @@ defineProps<{
         <div class="hidden p-[1%] h-screen xl:flex items-center w-auto overflow-hidden">
             <img :src=image class="object-cover max-h-full w-full rounded-xl" :alt=alt>
         </div>
-        <img class="hidden xl:block absolute top-[24%] left-1/2 -translate-x-1/2 h-24" src="@/assets/images/svg/mmi_logo-white.svg" alt="">
+        <img class="hidden xl:block absolute top-[24%] left-1/2 -translate-x-1/2 h-24" src="@/assets/images/svg/mmi_logo-white.svg" alt="Logo MMI">
         <h1 class="uppercase text-white absolute top-[22%] xl:top-[48%] left-1/2 -translate-x-1/2">
             {{title}}
         </h1>

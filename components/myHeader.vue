@@ -41,7 +41,7 @@ const handleScroll = () => {
     <header class="hidden xl:block fixed top-8 left-1/2 -translate-x-1/2 z-10 bg-white py-2 px-4 rounded-[44px] w-4/5 mx-auto drop-shadow-lg" :class="{ 'expand': isAnimated, 'hide-expand': isHidden }">
         <nav class="text-gris text-xl font-poppins font-semibold flex justify-between items-center" :class="{ 'drop': isAnimated, 'hide-drop': isHidden }">
             <NuxtLink class="relative" to="/">
-                <img src="@/assets/images/svg/mmi_logo-header.svg" alt="Logo" class="h-8 pl-2 pb-1">
+                <img src="@/assets/images/svg/mmi_logo-header.svg" alt="Logo MMI" class="h-8 pl-2 pb-1">
             </NuxtLink>
             <NuxtLink class="relative animate" to="/la-formation">La Formation</NuxtLink>
             <NuxtLink class="relative animate" to="/le-departement">Le Département</NuxtLink>
@@ -53,7 +53,7 @@ const handleScroll = () => {
 
     <header class="xl:hidden absolute top-0 left-0 z-10 w-full">
         <div class="flex items-center justify-between p-6">
-            <img class="h-10" src="@/assets/images/svg/mmi_logo-white.svg" alt="Logo">
+            <img class="h-10" src="@/assets/images/svg/mmi_logo-white.svg" alt="Logo MMI">
             <button @click="toggleMenu">
                 <img class="h-10" src="@/assets/images/svg/icn/open-menu.svg" alt="Ouvrir le menu">
             </button>

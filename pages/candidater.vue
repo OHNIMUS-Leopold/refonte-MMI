@@ -4,6 +4,6 @@ import heroImg from '../assets/images/bitmap/home-test.png';
 
 <template>
     <main>
-        <MyHero :image=heroImg alt="" title="Candidater"/>
+        <MyHero :image=heroImg alt="Bâtiment MMI" title="Candidater"/>
     </main>
 </template>
