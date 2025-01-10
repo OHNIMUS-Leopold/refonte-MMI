@@ -4,6 +4,12 @@ defineProps<{
     alt: string;
     title: string;
 }>();
+
+const route = useRoute();
+
+const getLink = (path: string) => {
+    return route.path === path ? `${path}#ici` : path;
+};
 </script>
 
 <template>
@@ -19,11 +25,11 @@ defineProps<{
         <div class="absolute top-[34%] xl:top-[70%] w-full text-center">
             <div class="block xl:hidden space-x-[16%]">
                 <LandingButtonMini to="/la-formation">Découvrir la formation</LandingButtonMini>
-                <LandingButtonMini to="/candidater">Candidater</LandingButtonMini>
+                <LandingButtonMini :to="getLink('/candidater')">Candidater</LandingButtonMini>
             </div>
             <div class="hidden xl:block space-x-[16%]">
                 <LandingButton to="/la-formation">Découvrir la formation</LandingButton>
-                <LandingButton to="/candidater">Candidater</LandingButton>
+                <LandingButton :to="getLink('/candidater')">Candidater</LandingButton>
             </div>
         </div>
     </div>
