@@ -5,5 +5,10 @@ import heroImg from '../assets/images/bitmap/home-test.png';
 <template>
     <main>
         <MyHero :image=heroImg alt="Bâtiment MMI" title="Candidater"/>
+        <div id="ici">
+            blalalallalfjebfiub
+        </div>
+
+
     </main>
 </template>
