@@ -8,7 +8,7 @@ import heroImg from '../assets/images/bitmap/home-test.png';
 
         <div class="margin">
             <div class="text-center">
-                <h2 class="mb-5 relative inline-block">
+                <h2 class="mb-1 md:mb-5 relative inline-block">
                     <span class="text-noir">
                         Rejoignez le département
                     </span>
@@ -21,7 +21,8 @@ import heroImg from '../assets/images/bitmap/home-test.png';
                 </h2>
             </div>
             
-            <img class="mx-auto mb-16 md:mb-32" src="@/assets/images/svg/underline-y.svg" alt="">
+            <img class="hidden md:block mx-auto mb-16 md:mb-32" src="@/assets/images/svg/underline-y.svg" alt="">
+            <img class="md:hidden mx-auto mb-16 md:mb-32" src="@/assets/images/svg/underline-y-mini.svg" alt="">
             
             
             <section class="grid grid-cols-1 xl:grid-cols-5 xl:gap-14">
