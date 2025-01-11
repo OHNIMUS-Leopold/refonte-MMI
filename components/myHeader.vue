@@ -93,7 +93,7 @@ const handleScroll = () => {
 
 
 
-<style>
+<style scoped>
 
 .overflow-hidden {
     overflow: hidden;
