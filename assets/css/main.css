@@ -28,9 +28,9 @@ p {
 /* Tablet & Desktop */
 
 @media (min-width: 768px) { 
-    /* h1 {
+    h1 {
         @apply font-poppins font-semibold text-7xl;
-    } */
+    }
 
     h2 {
         @apply font-poppins font-bold text-5xl;
@@ -46,11 +46,11 @@ p {
 }
 
 
-@media (min-width: 1280px) { 
+/* @media (min-width: 1280px) { 
     h1 {
         @apply font-poppins font-semibold text-7xl;
     }
-}
+} */
 
 
 .margin {
