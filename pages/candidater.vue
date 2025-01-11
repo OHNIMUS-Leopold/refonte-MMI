@@ -21,8 +21,8 @@ import heroImg from '../assets/images/bitmap/home-test.png';
                 </h2>
             </div>
             
-            <img class="hidden md:block mx-auto mb-16 md:mb-32" src="@/assets/images/svg/underline-y.svg" alt="">
-            <img class="md:hidden mx-auto mb-16 md:mb-32" src="@/assets/images/svg/underline-y-mini.svg" alt="">
+            <img class="hidden md:block mx-auto mb-12 md:mb-24" src="@/assets/images/svg/underline-y.svg" alt="">
+            <img class="md:hidden mx-auto mb-12 md:mb-24" src="@/assets/images/svg/underline-y-mini.svg" alt="">
             
             
             <section class="grid grid-cols-1 xl:grid-cols-5 xl:gap-14">
