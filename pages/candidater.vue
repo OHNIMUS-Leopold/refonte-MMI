@@ -12,7 +12,7 @@ import heroImg from '../assets/images/bitmap/hero-candidater.png';
             
             <section class="grid grid-cols-1 xl:grid-cols-5 xl:gap-14 mb-12 md:mb-24">
                 <div class="col-span-3 xl:flex xl:flex-col xl:justify-between">
-                    <AnimatedHeading class="text-noir mb-8" title="Pourquoi choisir MMI Montbéliard ?" />
+                    <AnimatedHeading class="text-noir mb-8" title="Pourquoi choisir MMI Montbéliard ?" />
                     <p class="text-noir my-5 xl:m-0">
                         Le département MMI Montbéliard offre une formation pluridisciplinaire qui permet de maîtriser la création de contenu multimédia, le design, le développement web, et la communication digitale, entre autres compétences. Vous évoluerez dans un environnement stimulant où vous participerez à des projets concrets et collaborerez avec des professionnels du secteur. Nos espaces de travail sont équipés des dernières technologies pour vous accompagner dans le développement de vos projets. De plus, vous aurez l’opportunité d’intégrer des entreprises partenaires lors de stages, enrichissant ainsi votre expérience et vos perspectives professionnelles.
                     </p>
