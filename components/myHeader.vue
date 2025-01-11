@@ -53,7 +53,9 @@ const handleScroll = () => {
 
     <header class="xl:hidden absolute top-0 left-0 z-10 w-full">
         <div class="flex items-center justify-between p-6">
-            <img class="h-10" src="@/assets/images/svg/mmi_logo-white.svg" alt="Logo MMI">
+            <NuxtLink class="contents" to="/">
+                <img class="h-10" src="@/assets/images/svg/mmi_logo-white.svg" alt="Logo MMI">
+            </NuxtLink>
             <button @click="toggleMenu">
                 <img class="h-10" src="@/assets/images/svg/icn/open-menu.svg" alt="Ouvrir le menu">
             </button>
