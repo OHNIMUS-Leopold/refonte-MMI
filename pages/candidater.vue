@@ -6,24 +6,9 @@ import heroImg from '../assets/images/bitmap/home-test.png';
     <main>
         <MyHero :image=heroImg alt="Bâtiment MMI" title="Candidater"/>
 
-        <div class="margin">
-            <div class="text-center">
-                <h2 class="mb-1 md:mb-5 relative inline-block">
-                    <span class="text-noir">
-                        Rejoignez le département
-                    </span>
-                    <span class="text-jaune">
-                        MMI Montbéliard
-                    </span>
-                    <div class="absolute -top-6 -right-8 ">
-                        <img class="" src="@/assets/images/svg/3lines-y.svg" alt="">
-                    </div>
-                </h2>
-            </div>
-            
-            <img class="hidden md:block mx-auto mb-12 md:mb-24" src="@/assets/images/svg/underline-y.svg" alt="">
-            <img class="md:hidden mx-auto mb-12 md:mb-24" src="@/assets/images/svg/underline-y-mini.svg" alt="">
-            
+        <div class="margin"> 
+
+            <SecondHeading title-black="Rejoignez le département " title-yellow="MMI Montbéliard" />
             
             <section class="grid grid-cols-1 xl:grid-cols-5 xl:gap-14">
                 <div class="col-span-3 xl:flex xl:flex-col xl:justify-between">
@@ -35,7 +20,6 @@ import heroImg from '../assets/images/bitmap/home-test.png';
                     </p>
                 </div>
                 <img class="col-span-2 xl:place-self-end w-auto" src="../assets/images/bitmap/home-test.png" alt="">
-                
             </section>
 
 
