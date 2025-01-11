@@ -21,7 +21,7 @@ export default {
         manrope: "Manrope, sans-serif",
       },
       screens: {
-        'tablet': '640px',
+        // 'tablet': '640px',
       },
     },
   },

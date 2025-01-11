@@ -41,7 +41,7 @@ const handleScroll = () => {
     <header class="hidden xl:block fixed top-8 left-1/2 -translate-x-1/2 z-10 bg-white py-2 px-4 rounded-[44px] w-4/5 mx-auto drop-shadow-lg" :class="{ 'expand': isAnimated, 'hide-expand': isHidden }">
         <nav class="text-gris text-xl font-poppins font-semibold flex justify-between items-center" :class="{ 'drop': isAnimated, 'hide-drop': isHidden }">
             <NuxtLink class="relative" to="/">
-                <img src="@/assets/images/svg/mmi_logo-header.svg" alt="Logo" class="h-8 pl-2 pb-1">
+                <img src="@/assets/images/svg/mmi_logo-header.svg" alt="Logo MMI" class="h-8 pl-2 pb-1">
             </NuxtLink>
             <NuxtLink class="relative animate" to="/la-formation">La Formation</NuxtLink>
             <NuxtLink class="relative animate" to="/le-departement">Le Département</NuxtLink>
@@ -53,7 +53,9 @@ const handleScroll = () => {
 
     <header class="xl:hidden absolute top-0 left-0 z-10 w-full">
         <div class="flex items-center justify-between p-6">
-            <img class="h-10" src="@/assets/images/svg/mmi_logo-white.svg" alt="Logo">
+            <NuxtLink class="contents" to="/">
+                <img class="h-10" src="@/assets/images/svg/mmi_logo-white.svg" alt="Logo MMI">
+            </NuxtLink>
             <button @click="toggleMenu">
                 <img class="h-10" src="@/assets/images/svg/icn/open-menu.svg" alt="Ouvrir le menu">
             </button>
@@ -67,11 +69,11 @@ const handleScroll = () => {
                     <img src="@/assets/images/svg/icn/close-menu.svg" alt="Fermer le menu">
                 </button>
             </div>
-            <NuxtLink class="relative animate" to="/" @click="toggleMenu">Accueil</NuxtLink>
-            <NuxtLink class="relative animate" to="/la-formation" @click="toggleMenu">La Formation</NuxtLink>
-            <NuxtLink class="relative animate" to="/le-departement" @click="toggleMenu">Le Département</NuxtLink>
-            <NuxtLink class="relative animate" to="/international" @click="toggleMenu">International</NuxtLink>
-            <NuxtLink class="relative animate" to="/contact" @click="toggleMenu">Contact</NuxtLink>
+            <NuxtLink class="relative animate-mobile" to="/" @click="toggleMenu">Accueil</NuxtLink>
+            <NuxtLink class="relative animate-mobile" to="/la-formation" @click="toggleMenu">La Formation</NuxtLink>
+            <NuxtLink class="relative animate-mobile" to="/le-departement" @click="toggleMenu">Le Département</NuxtLink>
+            <NuxtLink class="relative animate-mobile" to="/international" @click="toggleMenu">International</NuxtLink>
+            <NuxtLink class="relative animate-mobile" to="/contact" @click="toggleMenu">Contact</NuxtLink>
             <hr class="border-t-2 border-noir" style="width: calc(100% - 20px);" >
             <NuxtLink to="/candidater" class="font-medium text-lg font-manrope py-1 px-6 border-solid border-[3px] border-jaune bg-jaune rounded-3xl hover:bg-white duration-500" @click="toggleMenu">Candidater</NuxtLink>    
             <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex justify-between space-x-6 mx-auto">
@@ -91,7 +93,7 @@ const handleScroll = () => {
 
 
 
-<style>
+<style scoped>
 
 .overflow-hidden {
     overflow: hidden;
@@ -112,6 +114,36 @@ const handleScroll = () => {
 .animate:hover::after {
     width: 100%;
 }
+
+.animate-mobile::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 2px;
+    width: 26px;
+    background: #FFD53E;
+    transition: width .4s;
+    z-index: 20;
+    animation: allerretour 2s ease-in-out;
+}
+
+@keyframes allerretour {
+    0% {
+        width: 26px;
+    }
+    35% {
+        width: 100%;
+    }
+    70% {
+        width: 18px;
+    }
+    100% {
+        width: 26px;
+    }
+}
+
+
 
 .expand {
     animation: expand 2s ease-in-out;
