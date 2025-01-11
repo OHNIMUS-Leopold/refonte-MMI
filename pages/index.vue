@@ -47,9 +47,18 @@ onUnmounted(() => {
         
         <MyHero class="md:hidden" :image=heroImg alt="Bâtiment MMI" title="MMI Montbéliard"/>
 
+        <div class="margin pb-[600px]"> 
+            <SecondHeading class="lg:mx-24" title-black="La formation de 3 ans qui vous prépare aux " title-yellow="métiers du multimédia" />
 
-        <div class="static">
-            <p class="">bla</p>
+            <section class="grid grid-cols-1 xl:grid-cols-5 xl:gap-14 mb-12 md:mb-24">
+                <div class="col-span-3 xl:flex xl:flex-col xl:gap-8">
+                    <AnimatedHeading class="text-noir mb-8" title="MMI qu'est-ce que c'est ?" />
+                    <p class="text-noir my-5 xl:m-0">
+                        Le BUT MMI allie créativité, expertise digitale et développement web pour former des professionnels polyvalents, capables de concevoir des projets innovants et de s'adapter aux évolutions du secteur numérique. Grâce à une approche pratique et une immersion professionnelle, les étudiants développent des compétences en design, programmation et gestion de projets digitaux. Ce parcours d'excellence prépare les talents de demain à relever les défis du numérique en constante évolution.
+                    </p>
+                </div>
+                <img class="h-48 col-span-2 xl:place-self-end w-auto mx-auto px-10" src="../assets/images/svg/mmi_logo-header.svg" alt="Logo MMI">
+            </section>
         </div>
     </main>
 </template>
