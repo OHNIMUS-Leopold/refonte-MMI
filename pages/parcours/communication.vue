@@ -1,3 +1,3 @@
 <template>
-    comm
+    <div>comm</div>
 </template>

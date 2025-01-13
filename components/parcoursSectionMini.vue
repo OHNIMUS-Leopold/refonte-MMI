@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul id="cards">
-            <li class="card" id="card1">
+            <li id="card1" class="card">
                 <div class="card-body">
                     <div class="card-body-content text-noir">
                         <h3 class="card-body-content-title">Développement Web et <br>Dispositifs Interactifs</h3>
@@ -9,10 +9,10 @@
                             Ce parcours vous dotera des compétences techniques nécessaires pour concevoir des sites internet complets. Vous explorerez différents langages de programmation, notamment HTML, JavaScript, CSS, et Vue.js, afin de réaliser des sites fonctionnels et modernes.</p>
                         <DiscoverButton to="/parcours/developpement" />
                     </div>
-                    <video autoplay loop muted class="bg-[#D9D9D9] h-28 mt-5" src="@/assets/videos/Logo_Dev_1.mp4"></video>
+                    <video autoplay loop muted class="bg-[#D9D9D9] h-28 mt-5" src="@/assets/videos/Logo_Dev_1.mp4"/>
                 </div>
             </li>
-            <li class="card" id="card2">
+            <li id="card2" class="card">
                 <div class="card-body">
                     <div class="card-body-content text-noir">
                         <h3 class="card-body-content-title">Création Numérique</h3>
@@ -20,10 +20,10 @@
                             Ce parcours vous plongera dans la création de supports visuels variés, allant des maquettes de sites web aux affiches et vidéos. Vous apprendrez à maîtriser des logiciels tels qu’After Effects, Photoshop et Illustrator pour donner vie à vos projets visuels.</p>
                         <DiscoverButton to="/parcours/creation" />
                     </div>
-                    <video autoplay loop muted class="bg-[#D9D9D9] h-28 mt-5" src="@/assets/videos/Logo_Crea_1.mp4"></video>
+                    <video autoplay loop muted class="bg-[#D9D9D9] h-28 mt-5" src="@/assets/videos/Logo_Crea_1.mp4"/>
                 </div>
             </li>
-            <li class="card" id="card3">
+            <li id="card3" class="card">
                 <div class="card-body">
                     <div class="card-body-content text-noir">
                         <h3 class="card-body-content-title">Stratégie de Communication <br>Numérique et Design d'Expérience</h3>
@@ -32,7 +32,7 @@
                         </p>
                         <DiscoverButton to="/parcours/communication" />
                     </div>
-                    <video autoplay loop muted class="bg-[#D9D9D9] h-28 mt-5" src="@/assets/videos/Logo_Com_1.mp4"></video>
+                    <video autoplay loop muted class="bg-[#D9D9D9] h-28 mt-5" src="@/assets/videos/Logo_Com_1.mp4"/>
                 </div>
             </li>
         </ul>

@@ -1,3 +1,3 @@
 <template>
-    crea
+    <div>crea</div>
 </template>

@@ -1,5 +1,6 @@
 <template>
-    <div class="slider my-14 md:my-24" reverse="true" style="
+    <div
+class="slider my-14 md:my-24" reverse="true" style="
         --width: 300px;
         --height: 60px;
         --quantity: 12; /* 6 textes + 6 vecteurs */
