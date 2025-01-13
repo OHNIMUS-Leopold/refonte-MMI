@@ -4,7 +4,7 @@ import heroImg from '../assets/images/bitmap/hero-candidater.png';
 
 <template>
     <main>
-        <MyHero :image=heroImg alt="Bâtiment MMI" title="Candidater"/>
+        <MyHero :image=heroImg alt="Étudiants de MMI" title="Candidater"/>
 
         <div class="margin"> 
 

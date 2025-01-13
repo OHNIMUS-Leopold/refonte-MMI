@@ -5,7 +5,7 @@ import heroImg from '@/assets/images/bitmap/hero-mentions.png';
 
 <template>
     <main>
-        <MyHero :image=heroImg alt="Bâtiment MMI" title="Mentions légales"/>
+        <MyHero :image=heroImg alt="Étudiants avec leurs ordinateurs" title="Mentions légales"/>
         <section class="margin">
             <SecondHeading class="lg:w-3/5 xl:w-2/5 mx-auto" title-black="Mentions " title-yellow="légales" />
             <h3 class="text-noir uppercase">
