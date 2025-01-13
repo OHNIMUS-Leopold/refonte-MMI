@@ -28,6 +28,12 @@ import heroImg from '@/assets/images/bitmap/hero-mentions.png';
                 Infomaniak
             </p>
             <h3 class="text-noir uppercase">
+                Crédits Photographiques
+            </h3>
+            <p class="text-noir mt-1 mb-6 md:mt-3 md:mb-8">
+                Université de Franche-Comté.
+            </p>
+            <h3 class="text-noir uppercase">
                 Propriété intellectuelle
             </h3>
             <p class="text-noir mt-1 mb-6 md:mt-3 md:mb-8">
