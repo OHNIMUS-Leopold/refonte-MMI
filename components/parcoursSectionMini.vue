@@ -9,7 +9,7 @@
                             Ce parcours vous dotera des compétences techniques nécessaires pour concevoir des sites internet complets. Vous explorerez différents langages de programmation, notamment HTML, JavaScript, CSS, et Vue.js, afin de réaliser des sites fonctionnels et modernes.</p>
                         <DiscoverButton to="/parcours/developpement" />
                     </div>
-                    <div class="bg-[#D9D9D9] h-60 mt-5"></div>
+                    <video autoplay loop muted class="bg-[#D9D9D9] h-28 mt-5" src="@/assets/videos/Logo_Dev_1.mp4"></video>
                 </div>
             </li>
             <li class="card" id="card2">
@@ -32,7 +32,7 @@
                         </p>
                         <DiscoverButton to="/parcours/communication" />
                     </div>
-                    <div class="bg-[#D9D9D9] h-60 mt-5"></div>
+                    <video autoplay loop muted class="bg-[#D9D9D9] h-28 mt-5" src="@/assets/videos/Logo_Com_1.mp4"></video>
                 </div>
             </li>
         </ul>
