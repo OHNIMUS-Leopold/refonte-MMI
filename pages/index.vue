@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SlidingText from '~/components/slidingText.vue';
 import heroImg from '../assets/images/bitmap/home-test.png';
 
 
@@ -74,6 +75,8 @@ onUnmounted(() => {
         <ParcoursSection class="-mt-20 hidden lg:block" />
 
         <ParcoursSectionMini class="-mt-14 lg:hidden" />
+
+        <SlidingText />
 
         <div class="margin">
 
