@@ -40,7 +40,7 @@ onMounted(() => {
     width: 25%;
     background: #FFD53E;
     transition: width .4s;
-    z-index: 20;
+    /* z-index: 20; */
     /* animation: allerretour 1s ease-in-out forwards; */
 }
 
