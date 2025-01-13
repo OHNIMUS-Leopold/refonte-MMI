@@ -79,7 +79,33 @@ onUnmounted(() => {
         <SlidingText />
 
         <div class="margin">
+            <section class="my-36">
+                <AnimatedHeading class="text-noir mb-8" title="Donnez vie à des projets ambitieux" />
+                <p class="text-noir my-5 xl:m-0">
+                    Ces témoignages reflètent le parcours de nos étudiants, qui ont su tirer parti de notre formation pour s’épanouir dans le secteur numérique et la communication.
+                </p>
+            </section>
 
+            <section>
+                <AnimatedHeading class="text-noir mb-8" title="MMI c’est aussi des des rencontres et des parcours inspirants" />
+                <p class="text-noir">
+                    Intégrer le BUT MMI, c'est partir à la rencontre de professionnels, explorer des parcours variés et relever des défis concrets. Des expériences qui forgent des compétences et ouvrent de nouvelles perspectives, que ce soit à travers des projets locaux ou un semestre à l'international.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 md:gap-24 xl:gap-44">
+                    <div>
+                        <img class="my-3 md:mt-8" src="@/assets/images/bitmap/situation.png" alt="photo mise en situation professionnelle" />
+                        <h3 class="text-noir border-l-[8px] md:border-l-[12px] border-jaune pl-2 md:pl-5">
+                            Des mises en situations <br>professionnelles
+                        </h3>
+                    </div>
+                    <div>
+                        <img class="my-3 mt-8" src="@/assets/images/bitmap/canada.png" alt="photo canada" />
+                        <h3 class="text-noir md:text-right border-0 border-l-[8px] md:border-l-0 md:border-r-[12px] border-gris pl-2 md:pr-5">
+                            Un semestre <br>au Canada
+                        </h3>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 </template>
