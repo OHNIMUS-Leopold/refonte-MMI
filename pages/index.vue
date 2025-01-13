@@ -73,7 +73,7 @@ onUnmounted(() => {
 
         <ParcoursSection class="-mt-20 hidden lg:block" />
 
-        <ParcoursSectionMini class="lg:hidden" />
+        <ParcoursSectionMini class="-mt-14 lg:hidden" />
 
         <div class="margin">
 
