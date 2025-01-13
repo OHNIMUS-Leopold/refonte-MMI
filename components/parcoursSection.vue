@@ -20,7 +20,7 @@
                             Ce parcours vous plongera dans la création de supports visuels variés, allant des maquettes de sites web aux affiches et vidéos. Vous apprendrez à maîtriser des logiciels tels qu’After Effects, Photoshop et Illustrator pour donner vie à vos projets visuels.</p>
                         <DiscoverButton to="/parcours/creation" />
                     </div>
-                    <div class="bg-[#D9D9D9] w-full aspect-square flex items-center"><img class="object-cover m-auto" src="https://placehold.co/150x300" alt="Logo création numérique" /></div>
+                    <video autoplay loop muted class="w-full aspect-square flex items-center" src="@/assets/videos/Logo_Crea_1.mp4"></video>
                 </div>
             </li>
             <li class="card" id="card3">
@@ -76,7 +76,7 @@
     border: solid 2px rgba(169, 169, 169, 0.6);
     border-left: 0px;
     border-right: 0px;
-	padding: 56px 32px;
+	padding: 56px;
 
 	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
 
