@@ -93,6 +93,15 @@
     width: auto; /* Conserve les proportions */
 }
 
+@media (max-width: 768px) {
+    .text {
+        font-size: 1.5rem;
+    }
+    .vector {
+        height: 2rem;
+    }
+}
+
 /* Animation pour le déroulement normal */
 @keyframes autoRun {
     from {
