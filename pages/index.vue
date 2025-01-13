@@ -47,7 +47,7 @@ onUnmounted(() => {
         
         <MyHero class="md:hidden" :image=heroImg alt="Bâtiment MMI" title="MMI Montbéliard"/>
 
-        <div class="margin pb-[600px]"> 
+        <div class="margin"> 
 
             <SecondHeading class="lg:mx-24" title-black="La formation de 3 ans qui vous prépare aux " title-yellow="métiers du multimédia" />
 
@@ -69,7 +69,14 @@ onUnmounted(() => {
                     </p>
                 </div>
             </section>
-            
+        </div>
+
+        <ParcoursSection class="-mt-20 hidden lg:block" />
+
+        <ParcoursSectionMini class="lg:hidden" />
+
+        <div class="margin">
+
         </div>
     </main>
 </template>
