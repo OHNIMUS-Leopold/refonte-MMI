@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         poppins: "Poppins, sans-serif",
         manrope: "Manrope, sans-serif",
+        spacegrotesk: "Space Grotesk, sans-serif",
       },
       screens: {
         // 'tablet': '640px',
