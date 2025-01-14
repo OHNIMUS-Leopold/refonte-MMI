@@ -68,7 +68,7 @@ function changeYear(newYear: number) {
         currentVideo.value = `still-${newYear}`;
         playCurrentVideo();
         isTransitioning.value = false;
-    }, 5000); // Durée de la vidéo de transition
+    }, 7000); // Durée de la vidéo de transition
 }
 
 function onVideoEnded() {
@@ -83,8 +83,8 @@ function onVideoEnded() {
 
 <template>
     <main>
-        <div v-show="allLoaded" class="relative w-full h-screen flex items-center justify-center bg-gray-900">
-            <div class="relative w-full h-full overflow-hidden">
+        <div v-show="allLoaded" class="relative w-full h-screen flex items-center justify-center bg-noir">
+            <div class="relative w-screen overflow-hidden">
                 <video
                     v-for="video in allVideos"
                     v-show="currentVideo === video.name"
@@ -100,20 +100,33 @@ function onVideoEnded() {
             </div>
 
 
-            <div class="absolute bottom-10 flex space-x-4">
-                <button
+            <div class="absolute top-1/2 translate-y-1/4 w-4/5 flex justify-between">
+                <LandingButtonAction
                     v-for="year in otherYears"
                     :key="year"
                     class="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-200"
                     @click="changeYear(year)"
                 >
-                    Les {{ year }}ème année
-                </button>
+                    Les {{ year }}
+                    <span v-if="year === 1">
+                        <sup>ères</sup>
+                    </span>
+                    <span v-else>
+                        <sup>èmes</sup>
+                    </span>
+                    années
+
+                </LandingButtonAction>
+            </div>
+            <div class="absolute flex flex-col gap-2 items-center -translate-y-1/4 top-1/2 bg-gris rounded-xl py-6 px-14 ">
+                <img class="w-64" src="../assets/images/svg/mmi_logo-white.svg" alt="Logo MMI">
+                <h1 class="uppercase font-poppins font-bold text-4xl text-white">La Formation</h1>
             </div>
         </div>
-        <div v-show="!allLoaded">
-            loader
+        <div v-show="!allLoaded" class="bg-gris flex justify-center items-center w-full h-screen">
+            <span class="loader"></span>
         </div>
+
 
 
 
@@ -173,3 +186,64 @@ function onVideoEnded() {
         </div>
     </main>
 </template>
+
+
+
+<style scoped>
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FFD53E#FFD53E;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+}
+.loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+}
+    
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+    
+
+
+</style>
