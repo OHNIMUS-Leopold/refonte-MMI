@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import alternanceImg from '@/assets/images/bitmap/stage-alternance.png';
 import vanierImg from '@/assets/images/bitmap/cgep-vanier-grand.png';
+import heroImg from '@/assets/images/bitmap/hero-formation.png';
+
 
 const currentYear = ref(1);
 const isTransitioning = ref(false);
@@ -83,56 +85,52 @@ function onVideoEnded() {
 
 <template>
     <main>
-        <div v-show="allLoaded" class="relative w-full h-screen flex items-center justify-center bg-noir">
-            <div class="relative w-screen overflow-hidden">
-                <video
-                    v-for="video in allVideos"
-                    v-show="currentVideo === video.name"
-                    :key="video.name"
-                    ref="videos"
-                    :src="video.src"
-                    autoplay
-                    muted
-                    loop
-                    class="w-full h-full"
-                    @ended="onVideoEnded"
-                />
+        <div class="hidden xl:block">
+            <div v-show="allLoaded" class="relative w-full h-screen flex items-center justify-center bg-noir">
+                <div class="relative w-screen overflow-hidden">
+                    <video
+                        v-for="video in allVideos"
+                        v-show="currentVideo === video.name"
+                        :key="video.name"
+                        ref="videos"
+                        :src="video.src"
+                        autoplay
+                        muted
+                        loop
+                        class="w-full h-full"
+                        @ended="onVideoEnded"
+                    />
+                </div>
+                <div class="absolute top-1/2 translate-y-1/4 w-4/5 flex justify-between">
+                    <LandingButtonAction
+                        v-for="year in otherYears"
+                        :key="year"
+                        class="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-200"
+                        @click="changeYear(year)"
+                    >
+                        Les {{ year }}
+                        <span v-if="year === 1">
+                            <sup>ères</sup>
+                        </span>
+                        <span v-else>
+                            <sup>èmes</sup>
+                        </span>
+                        années
+                    </LandingButtonAction>
+                </div>
+                <div class="absolute flex flex-col gap-2 items-center -translate-y-1/4 top-1/2 bg-gris rounded-xl py-6 px-14 ">
+                    <img class="w-64" src="../assets/images/svg/mmi_logo-white.svg" alt="Logo MMI">
+                    <h1 class="uppercase font-poppins font-bold text-4xl text-white">La Formation</h1>
+                </div>
             </div>
-
-
-            <div class="absolute top-1/2 translate-y-1/4 w-4/5 flex justify-between">
-                <LandingButtonAction
-                    v-for="year in otherYears"
-                    :key="year"
-                    class="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-200"
-                    @click="changeYear(year)"
-                >
-                    Les {{ year }}
-                    <span v-if="year === 1">
-                        <sup>ères</sup>
-                    </span>
-                    <span v-else>
-                        <sup>èmes</sup>
-                    </span>
-                    années
-
-                </LandingButtonAction>
-            </div>
-            <div class="absolute flex flex-col gap-2 items-center -translate-y-1/4 top-1/2 bg-gris rounded-xl py-6 px-14 ">
-                <img class="w-64" src="../assets/images/svg/mmi_logo-white.svg" alt="Logo MMI">
-                <h1 class="uppercase font-poppins font-bold text-4xl text-white">La Formation</h1>
+            <div v-show="!allLoaded" class="bg-gris flex justify-center items-center w-full h-screen">
+                <span class="loader"></span>
             </div>
         </div>
-        <div v-show="!allLoaded" class="bg-gris flex justify-center items-center w-full h-screen">
-            <span class="loader"></span>
-        </div>
 
+        <MyHero class="xl:hidden" :image=heroImg alt="Bâtiment MMI" title="MMI Montbéliard"/>
 
-
-
-
-
-        <div class="margin">
+        <div class="margin xl:pt-10">
             
             <section class="mb-12 md:mb-24">
                 <SecondHeading class="lg:w-4/5 xl:w-3/5 mx-auto" title-black="Les parcours " title-yellow="disponibles" />
