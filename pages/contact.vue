@@ -41,15 +41,15 @@ const submitForm = async () => {
             <form @submit.prevent="submitForm">
                 <div>
                     <label for="name">Nom :</label>
-                    <input type="text" id="name" v-model="form.name" required />
+                    <input id="name" v-model="form.name" type="text" required >
                 </div>
                 <div>
                     <label for="email">Email :</label>
-                    <input type="email" id="email" v-model="form.email" required />
+                    <input id="email" v-model="form.email" type="email" required >
                 </div>
                 <div>
                     <label for="message">Message :</label>
-                    <textarea id="message" v-model="form.message" required></textarea>
+                    <textarea id="message" v-model="form.message" required/>
                 </div>
                     <button type="submit">Envoyer</button>
             </form>
