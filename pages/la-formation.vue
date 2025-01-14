@@ -1,44 +1,6 @@
-<template>
-    <div>
-        <div v-show="allLoaded" class="relative w-full h-screen flex items-center justify-center bg-gray-900">
-            <div class="relative w-full h-full overflow-hidden">
-                <video
-                    v-for="video in allVideos"
-                    v-show="currentVideo === video.name"
-                    :key="video.name"
-                    ref="videos"
-                    :src="video.src"
-                    autoplay
-                    muted
-                    loop
-                    class="w-full h-full"
-                    @ended="onVideoEnded"
-                />
-            </div>
-
-
-            <div class="absolute bottom-10 flex space-x-4">
-                <button
-                    v-for="year in otherYears"
-                    :key="year"
-                    class="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-200"
-                    @click="changeYear(year)"
-                >
-                    Les {{ year }}ème année
-                </button>
-            </div>
-        </div>
-        <div v-show="!allLoaded">
-            loader
-        </div>
-        <div>
-            dzkdziub
-        </div>
-    </div>
-</template>
-  
-
 <script setup lang="ts">
+import SecondHeading from '~/components/secondHeading.vue';
+
 const currentYear = ref(1);
 const isTransitioning = ref(false);
 const allLoaded = ref(false);
@@ -116,3 +78,73 @@ function onVideoEnded() {
     }
 }
 </script>
+
+
+<template>
+    <main>
+        <div v-show="allLoaded" class="relative w-full h-screen flex items-center justify-center bg-gray-900">
+            <div class="relative w-full h-full overflow-hidden">
+                <video
+                    v-for="video in allVideos"
+                    v-show="currentVideo === video.name"
+                    :key="video.name"
+                    ref="videos"
+                    :src="video.src"
+                    autoplay
+                    muted
+                    loop
+                    class="w-full h-full"
+                    @ended="onVideoEnded"
+                />
+            </div>
+
+
+            <div class="absolute bottom-10 flex space-x-4">
+                <button
+                    v-for="year in otherYears"
+                    :key="year"
+                    class="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-200"
+                    @click="changeYear(year)"
+                >
+                    Les {{ year }}ème année
+                </button>
+            </div>
+        </div>
+        <div v-show="!allLoaded">
+            loader
+        </div>
+
+
+
+
+
+        <div class="margin">
+            
+            <section class="mb-12 md:mb-24">
+                <SecondHeading class="lg:w-4/5 xl:w-3/5 mx-auto" title-black="Les parcours " title-yellow="disponibles" />
+                <p class="text-noir">
+                    La formation MMI propose trois parcours. Chacun permet d'acquérir des compétences spécifiques afin de répondre aux besoins du secteur numérique et de la communication.
+                </p>
+            </section>
+            
+        </div>
+        <ParcoursSection class="-mt-20 hidden lg:block" />
+
+        <ParcoursSectionMini class="-mt-14 lg:hidden" />
+
+        <div class="margin">
+            <section class="">
+                <AnimatedHeading class="text-noir mb-8" title="Le programme" />
+                <p class="text-noir my-5 xl:m-0">
+                    En première année, vous explorez toutes les spécialités pour acquérir une base solide et découvrir ce qui vous plaît. À partir de la deuxième année, vous pourrez choisir l’un des trois parcours proposés et vous y spécialiser jusqu’à la fin du Bachelor.
+                    <br>
+                    En troisième année, vous suivrez principalement des cours liés à votre spécialité, ainsi que quelques enseignements généraux comme l'anglais.
+                    <br>
+                    Cette organisation vous donne le temps d'explorer chaque parcours et de choisir celui qui vous correspond le mieux pour vous perfectionner dans ce domaine.
+                </p>
+
+                <YearsTable />
+            </section>
+        </div>
+    </main>
+</template>
