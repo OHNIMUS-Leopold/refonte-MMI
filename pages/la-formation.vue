@@ -124,7 +124,7 @@ function onVideoEnded() {
                 </div>
             </div>
             <div v-show="!allLoaded" class="bg-gris flex justify-center items-center w-full h-screen">
-                <span class="loader"></span>
+                <span class="loader"/>
             </div>
         </div>
 
@@ -159,17 +159,17 @@ function onVideoEnded() {
             </section>
 
             <SimpleSection
-                headingTitle="Stage et alternance"
-                paragraphText="Au cours de cette formation, des stages en entreprise sont obligatoires en 2ème et 3ème année. Le stage de 2ème année dure 10 semaines, tandis que celui de 3ème année s’étend sur 16 semaines, généralement de mars à la fin de l'année scolaire. Ces périodes vous permettent d'acquérir une solide expérience professionnelle.<br><br>Il est également possible de signer un contrat d’alternance dès la 2ème année jusqu'à la fin de la formation. En alternance, vous suivrez un rythme précis entre école et entreprise et serez dispensé de stage, étant déjà en activité professionnelle."
-                :imageSrc="alternanceImg"
-                imageAlt="Étudiants de MMI en stage"
+                heading-title="Stage et alternance"
+                paragraph-text="Au cours de cette formation, des stages en entreprise sont obligatoires en 2ème et 3ème année. Le stage de 2ème année dure 10 semaines, tandis que celui de 3ème année s’étend sur 16 semaines, généralement de mars à la fin de l'année scolaire. Ces périodes vous permettent d'acquérir une solide expérience professionnelle.<br><br>Il est également possible de signer un contrat d’alternance dès la 2ème année jusqu'à la fin de la formation. En alternance, vous suivrez un rythme précis entre école et entreprise et serez dispensé de stage, étant déjà en activité professionnelle."
+                :image-src="alternanceImg"
+                image-alt="Étudiants de MMI en stage"
             />   
 
             <SimpleSection
-                headingTitle="L'international"
-                paragraphText="Le département est en partenariat avec des universités étrangères, offrant ainsi aux étudiants la possibilité de partir un semestre à l’étranger. Cette expérience permet de découvrir de nouvelles cultures, d'améliorer ses compétences linguistiques et d’élargir ses connaissances dans un environnement international.<br><br>En étudiant dans des établissements partenaires, vous pourrez enrichir votre parcours académique et personnel, développer votre ouverture d'esprit et renforcer votre profil professionnel dans un contexte global."
-                :imageSrc="vanierImg"
-                imageAlt="CGEP de Vanier"
+                heading-title="L'international"
+                paragraph-text="Le département est en partenariat avec des universités étrangères, offrant ainsi aux étudiants la possibilité de partir un semestre à l’étranger. Cette expérience permet de découvrir de nouvelles cultures, d'améliorer ses compétences linguistiques et d’élargir ses connaissances dans un environnement international.<br><br>En étudiant dans des établissements partenaires, vous pourrez enrichir votre parcours académique et personnel, développer votre ouverture d'esprit et renforcer votre profil professionnel dans un contexte global."
+                :image-src="vanierImg"
+                image-alt="CGEP de Vanier"
                 style="margin-bottom: 20px;"
             />      
 

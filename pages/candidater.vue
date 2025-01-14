@@ -12,10 +12,10 @@ import candidaterImg from '@/assets/images/bitmap/candidater-section.png';
             <SecondHeading title-black="Rejoignez le département " title-yellow="MMI Montbéliard" />
 
             <SimpleSection
-                headingTitle="Pourquoi choisir MMI Montbéliard ?"
-                paragraphText="Le département MMI Montbéliard offre une formation pluridisciplinaire qui permet de maîtriser la création de contenu multimédia, le design, le développement web, et la communication digitale, entre autres compétences. Vous évoluerez dans un environnement stimulant où vous participerez à des projets concrets et collaborerez avec des professionnels du secteur. Nos espaces de travail sont équipés des dernières technologies pour vous accompagner dans le développement de vos projets. De plus, vous aurez l’opportunité d’intégrer des entreprises partenaires lors de stages, enrichissant ainsi votre expérience et vos perspectives professionnelles."
-                :imageSrc=candidaterImg
-                imageAlt="Étudiants de MMI"
+                heading-title="Pourquoi choisir MMI Montbéliard ?"
+                paragraph-text="Le département MMI Montbéliard offre une formation pluridisciplinaire qui permet de maîtriser la création de contenu multimédia, le design, le développement web, et la communication digitale, entre autres compétences. Vous évoluerez dans un environnement stimulant où vous participerez à des projets concrets et collaborerez avec des professionnels du secteur. Nos espaces de travail sont équipés des dernières technologies pour vous accompagner dans le développement de vos projets. De plus, vous aurez l’opportunité d’intégrer des entreprises partenaires lors de stages, enrichissant ainsi votre expérience et vos perspectives professionnelles."
+                :image-src=candidaterImg
+                image-alt="Étudiants de MMI"
             />
 
             <section id="ici" class="xl:grid xl:grid-cols-2">
