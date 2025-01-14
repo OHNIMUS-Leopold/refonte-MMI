@@ -12,4 +12,9 @@ export default defineNuxtConfig({
   },
 
   modules: ['@nuxt/eslint', '@nuxtjs/sanity'],
+
+  sanity: {
+    projectId: "e3rbrik8",
+    dataset: "production",
+  },
 })
