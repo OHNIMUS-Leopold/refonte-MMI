@@ -5,7 +5,7 @@ import heroImg from '@/assets/images/bitmap/hero-mentions.png';
 
 <template>
     <main>
-        <MyHero :image=heroImg alt="Bâtiment MMI" title="Mentions légales"/>
+        <MyHero :image=heroImg alt="Étudiants avec leurs ordinateurs" title="Mentions légales"/>
         <section class="margin">
             <SecondHeading class="lg:w-3/5 xl:w-2/5 mx-auto" title-black="Mentions " title-yellow="légales" />
             <h3 class="text-noir uppercase">
@@ -26,6 +26,12 @@ import heroImg from '@/assets/images/bitmap/hero-mentions.png';
             </h3>
             <p class="text-noir mt-1 mb-6 md:mt-3 md:mb-8">
                 Infomaniak
+            </p>
+            <h3 class="text-noir uppercase">
+                Crédits Photographiques
+            </h3>
+            <p class="text-noir mt-1 mb-6 md:mt-3 md:mb-8">
+                Université de Franche-Comté.
             </p>
             <h3 class="text-noir uppercase">
                 Propriété intellectuelle

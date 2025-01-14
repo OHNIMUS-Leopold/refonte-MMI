@@ -1,24 +1,22 @@
 <script setup lang="ts">
-import heroImg from '../assets/images/bitmap/hero-candidater.png';
+import heroImg from '@/assets/images/bitmap/hero-candidater.png';
+import candidaterImg from '@/assets/images/bitmap/candidater-section.png';
 </script>
 
 <template>
     <main>
-        <MyHero :image=heroImg alt="Bâtiment MMI" title="Candidater"/>
+        <MyHero :image=heroImg alt="Étudiants de MMI" title="Candidater"/>
 
         <div class="margin"> 
 
             <SecondHeading title-black="Rejoignez le département " title-yellow="MMI Montbéliard" />
-            
-            <section class="grid grid-cols-1 xl:grid-cols-5 xl:gap-14 mb-12 md:mb-24">
-                <div class="col-span-3 xl:flex xl:flex-col xl:gap-8">
-                    <AnimatedHeading class="text-noir mb-8" title="Pourquoi choisir MMI Montbéliard ?" />
-                    <p class="text-noir my-5 xl:m-0">
-                        Le département MMI Montbéliard offre une formation pluridisciplinaire qui permet de maîtriser la création de contenu multimédia, le design, le développement web, et la communication digitale, entre autres compétences. Vous évoluerez dans un environnement stimulant où vous participerez à des projets concrets et collaborerez avec des professionnels du secteur. Nos espaces de travail sont équipés des dernières technologies pour vous accompagner dans le développement de vos projets. De plus, vous aurez l’opportunité d’intégrer des entreprises partenaires lors de stages, enrichissant ainsi votre expérience et vos perspectives professionnelles.
-                    </p>
-                </div>
-                <img class="col-span-2 xl:place-self-end w-auto mx-auto" src="../assets/images/bitmap/candidater-section.png" alt="">
-            </section>
+
+            <SimpleSection
+                heading-title="Pourquoi choisir MMI Montbéliard ?"
+                paragraph-text="Le département MMI Montbéliard offre une formation pluridisciplinaire qui permet de maîtriser la création de contenu multimédia, le design, le développement web, et la communication digitale, entre autres compétences. Vous évoluerez dans un environnement stimulant où vous participerez à des projets concrets et collaborerez avec des professionnels du secteur. Nos espaces de travail sont équipés des dernières technologies pour vous accompagner dans le développement de vos projets. De plus, vous aurez l’opportunité d’intégrer des entreprises partenaires lors de stages, enrichissant ainsi votre expérience et vos perspectives professionnelles."
+                :image-src=candidaterImg
+                image-alt="Étudiants de MMI"
+            />
 
             <section id="ici" class="xl:grid xl:grid-cols-2">
                 <div class="text-left">

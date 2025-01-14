@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SlidingText from '~/components/slidingText.vue';
-import heroImg from '../assets/images/bitmap/home-test.png';
+import heroImg from '@/assets/images/bitmap/home-test.png';
 
 
 const containerHeight = ref(0);
@@ -59,7 +59,7 @@ onUnmounted(() => {
                         Le BUT MMI allie créativité, expertise digitale et développement web pour former des professionnels polyvalents, capables de concevoir des projets innovants et de s'adapter aux évolutions du secteur numérique. Grâce à une approche pratique et une immersion professionnelle, les étudiants développent des compétences en design, programmation et gestion de projets digitaux. Ce parcours d'excellence prépare les talents de demain à relever les défis du numérique en constante évolution.
                     </p>
                 </div>
-                <img class="h-28 md:h-40 lg:h-48 col-span-2 xl:place-self-end w-auto mx-auto px-10" src="../assets/images/svg/mmi_logo-header.svg" alt="Logo MMI">
+                <img class="h-28 md:h-40 lg:h-48 col-span-2 xl:place-self-end w-auto mx-auto px-10" src="@/assets/images/svg/mmi_logo-header.svg" alt="Logo MMI">
             </section>
 
             <section class="mb-12 md:mb-24">

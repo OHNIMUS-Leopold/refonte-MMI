@@ -11,37 +11,37 @@ class="slider my-14 md:my-24" reverse="true" style="
                 <p class="text">Intégration</p>
             </div>
             <div class="item" style="--position: 2">
-                <img class="vector" src="../assets/images/svg/sliding-vector.svg" alt="Vector">
+                <img class="vector" src="@/assets/images/svg/sliding-vector.svg" alt="Vector">
             </div>
             <div class="item" style="--position: 3">
                 <p class="text">Webdesign</p>
             </div>
             <div class="item" style="--position: 4">
-                <img class="vector" src="../assets/images/svg/sliding-vector.svg" alt="Vector">
+                <img class="vector" src="@/assets/images/svg/sliding-vector.svg" alt="Vector">
             </div>
             <div class="item" style="--position: 5">
                 <p class="text">Développement</p>
             </div>
             <div class="item" style="--position: 6">
-                <img class="vector" src="../assets/images/svg/sliding-vector.svg" alt="Vector">
+                <img class="vector" src="@/assets/images/svg/sliding-vector.svg" alt="Vector">
             </div>
             <div class="item" style="--position: 7">
                 <p class="text">Communication</p>
             </div>
             <div class="item" style="--position: 8">
-                <img class="vector" src="../assets/images/svg/sliding-vector.svg" alt="Vector">
+                <img class="vector" src="@/assets/images/svg/sliding-vector.svg" alt="Vector">
             </div>
             <div class="item" style="--position: 9">
                 <p class="text">Motion Design</p>
             </div>
             <div class="item" style="--position: 10">
-                <img class="vector" src="../assets/images/svg/sliding-vector.svg" alt="Vector">
+                <img class="vector" src="@/assets/images/svg/sliding-vector.svg" alt="Vector">
             </div>
             <div class="item" style="--position: 11">
                 <p class="text">UI / UX Design</p>
             </div>
             <div class="item" style="--position: 12">
-                <img class="vector" src="../assets/images/svg/sliding-vector.svg" alt="Vector">
+                <img class="vector" src="@/assets/images/svg/sliding-vector.svg" alt="Vector">
             </div>
         </div>
     </div>
