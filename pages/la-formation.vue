@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import SecondHeading from '~/components/secondHeading.vue';
+import alternanceImg from '@/assets/images/bitmap/stage-alternance.png';
+import vanierImg from '@/assets/images/bitmap/cgep-vanier-grand.png';
 
 const currentYear = ref(1);
 const isTransitioning = ref(false);
@@ -133,7 +134,7 @@ function onVideoEnded() {
         <ParcoursSectionMini class="-mt-14 lg:hidden" />
 
         <div class="margin">
-            <section class="">
+            <section class="mb-12 md:mb-24">
                 <AnimatedHeading class="text-noir mb-8" title="Le programme" />
                 <p class="text-noir my-5 xl:m-0">
                     En première année, vous explorez toutes les spécialités pour acquérir une base solide et découvrir ce qui vous plaît. À partir de la deuxième année, vous pourrez choisir l’un des trois parcours proposés et vous y spécialiser jusqu’à la fin du Bachelor.
@@ -145,6 +146,30 @@ function onVideoEnded() {
 
                 <YearsTable />
             </section>
+
+            <SimpleSection
+                headingTitle="Stage et alternance"
+                paragraphText="Au cours de cette formation, des stages en entreprise sont obligatoires en 2ème et 3ème année. Le stage de 2ème année dure 10 semaines, tandis que celui de 3ème année s’étend sur 16 semaines, généralement de mars à la fin de l'année scolaire. Ces périodes vous permettent d'acquérir une solide expérience professionnelle.<br><br>Il est également possible de signer un contrat d’alternance dès la 2ème année jusqu'à la fin de la formation. En alternance, vous suivrez un rythme précis entre école et entreprise et serez dispensé de stage, étant déjà en activité professionnelle."
+                :imageSrc="alternanceImg"
+                imageAlt="Étudiants de MMI en stage"
+            />   
+
+            <SimpleSection
+                headingTitle="L'international"
+                paragraphText="Le département est en partenariat avec des universités étrangères, offrant ainsi aux étudiants la possibilité de partir un semestre à l’étranger. Cette expérience permet de découvrir de nouvelles cultures, d'améliorer ses compétences linguistiques et d’élargir ses connaissances dans un environnement international.<br><br>En étudiant dans des établissements partenaires, vous pourrez enrichir votre parcours académique et personnel, développer votre ouverture d'esprit et renforcer votre profil professionnel dans un contexte global."
+                :imageSrc="vanierImg"
+                imageAlt="CGEP de Vanier"
+                style="margin-bottom: 20px;"
+            />      
+
+            <div class="flex justify-center xl:justify-start">
+                <TransparentButtonY class="hidden md:block w-fit" to="/international">
+                    Découvrir
+                </TransparentButtonY>
+                <TransparentButtonYMini class="md:hidden" to="/international">
+                    Découvrir
+                </TransparentButtonYMini>
+            </div>
         </div>
     </main>
 </template>
