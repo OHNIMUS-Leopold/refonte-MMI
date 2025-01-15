@@ -35,6 +35,7 @@ const submitForm = async () => {
         } else {
             console.log(res.message);
             form.value = { name: '', email: '', message: '' };
+            alert('Votre message a bien été envoyé !');
         }
 
     } catch (error) {
