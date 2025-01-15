@@ -74,8 +74,6 @@ const submitForm = async () => {
 
         <div class="margin" style="margin-bottom: 0;"> 
 
-            <SecondHeading class="lg:w-3/5 xl:w-2/5 mx-auto" title-black="Le " title-yellow="département" />
-
             <section class="grid grid-cols-1 xl:grid-cols-5 xl:gap-14">
                 <div class="col-span-3 xl:flex xl:flex-col xl:gap-4">
                     <AnimatedHeading class="text-noir mb-8" title="Le département" />
@@ -108,7 +106,7 @@ const submitForm = async () => {
             </section>
         </div>
 
-        <div class="pt-32 md:pt-36 relative">
+        <div class="pt-32 md:pt-36 relative -z-10">
             <img class="object-cover h-[150px] md:h-auto" src="@/assets/images/bitmap/bande-contact.png" alt="Étudiants qui travaillent">
             <p class="absolute top-1/2 translate-y-1/2 left-1/2 -translate-x-1/2 text-white font-semibold font-poppins text-7xl">Contact</p>
         </div>
