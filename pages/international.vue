@@ -3,6 +3,13 @@ import heroImg from '@/assets/images/bitmap/hero-international.png'
 import stageImg from '@/assets/images/bitmap/partir-en-stage.png'
 import offfImg from '@/assets/images/bitmap/conference-offf.png'
 import vanierImg from '@/assets/images/bitmap/cgep-vanier.png'
+
+useSeoMeta({
+    title: 'International | MMI Montbéliard',
+    description: "Découvrez les opportunités internationales offertes par le département MMI de Montbéliard : partenariats avec des universités étrangères pour des échanges et des semestres à l'international, enrichissant votre parcours académique et professionnel.",
+    ogImage: heroImg
+});
+
 </script>
 
 

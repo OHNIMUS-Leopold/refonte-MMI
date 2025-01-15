@@ -14,6 +14,6 @@ defineProps<{
             <AnimatedHeading class="text-noir mb-8" :title="headingTitle" />
             <p class="text-noir my-5 xl:m-0" v-html="paragraphText"/>
         </div>
-        <img class="col-span-2 xl:place-self-end w-auto mx-auto" :src="imageSrc" :alt="imageAlt">
+        <img class="col-span-2 xl:place-self-end w-auto mx-auto rounded-3xl" :src="imageSrc" :alt="imageAlt">
     </section>
 </template>

@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import heroImg from '@/assets/images/bitmap/hero-confidentialite.png';
+
+useSeoMeta({
+    title: 'Confidentialité | MMI Montbéliard',
+    description: 'Consultez notre politique de confidentialité pour en savoir plus sur la manière dont nous collectons, utilisons et protégeons vos données personnelles sur le site du département MMI de Montbéliard.',
+    ogImage: heroImg
+});
 </script>
 
 

@@ -4,6 +4,12 @@ import vanierImg from '@/assets/images/bitmap/cgep-vanier-grand.png';
 import heroImg from '@/assets/images/bitmap/hero-formation.png';
 import type { SanityDocument } from '@sanity/client';
 
+useSeoMeta({
+    title: 'La formation | MMI Montbéliard',
+    description: 'Explorez la formation MMI de Montbéliard : des parcours diversifiés en multimédia, web et communication, un programme complet alliant théorie et pratique, avec des stages enrichissants pour développer vos compétences.',
+    ogImage: heroImg
+});
+
 const ALUMNIS_QUERY = groq`*[_type == "alumni"] | {
     _id,
     name,

@@ -2,6 +2,11 @@
 import SlidingText from '~/components/slidingText.vue';
 import heroImg from '@/assets/images/bitmap/home-test.png';
 
+useSeoMeta({
+    title: 'Accueil | MMI Montbéliard',
+    description: 'Découvrez le département MMI de Montbéliard : une formation innovante en multimédia, web et communication pour préparer les talents de demain aux métiers du numérique.',
+    ogImage: heroImg
+});
 
 const containerHeight = ref(0);
 
