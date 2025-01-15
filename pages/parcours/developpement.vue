@@ -65,7 +65,7 @@ const {urlFor} = useSanityImage()
                 <div class="">
                     <AnimatedHeading class="text-noir mb-8" title="Les projets ambitieux de nos étudiants" />
                     <p class="text-noir">
-                        Voici des exemples de projet réalisés par nos étudiant en création numérique
+                        Voici des exemples de projet réalisés par nos étudiant en développement web :
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-[150px] xl:gap-[250px] mx-0 lg:mx-20 xl:mx-36 mt-5">
