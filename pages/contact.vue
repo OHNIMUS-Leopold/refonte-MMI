@@ -126,15 +126,15 @@ const submitForm = async () => {
                     <form class="w-full mx-0 lg:mx-14" @submit.prevent="submitForm">
                         <div class="grid grid-cols-1">
                             <label class="mb-1" for="name">Nom Prénom :</label>
-                            <input class="rounded-xl py-2 border-2 border-noir pl-4 mb-6 lg:mb-9" id="name" v-model="form.name" type="text" required >
+                            <input id="name" v-model="form.name" class="rounded-xl py-2 border-2 border-noir pl-4 mb-6 lg:mb-9" type="text" required >
                         </div>
                         <div class="grid grid-cols-1">
                             <label class="mb-1" for="email">Email :</label>
-                            <input class="rounded-xl py-2 border-2 border-noir pl-4 mb-6 lg:mb-9" id="email" v-model="form.email" type="email" required >
+                            <input id="email" v-model="form.email" class="rounded-xl py-2 border-2 border-noir pl-4 mb-6 lg:mb-9" type="email" required >
                         </div>
                         <div class="grid grid-cols-1">
                             <label class="mb-1" for="message">Message :</label>
-                            <textarea rows="4" class="rounded-xl py-2 border-2 border-noir pl-4 mb-9 lg:mb-16" id="message" v-model="form.message" required/>
+                            <textarea id="message" v-model="form.message" rows="4" class="rounded-xl py-2 border-2 border-noir pl-4 mb-9 lg:mb-16" required/>
                         </div>
                         <div class="grid grid-cols-1">
                             <button class="bg-jaune text-white font-poppins font-bold text-xl lg:text-3xl py-2 rounded-xl hover:text-jaune hover:bg-white border-[2px] border-solid border-jaune duration-500" type="submit">Envoyer</button>
