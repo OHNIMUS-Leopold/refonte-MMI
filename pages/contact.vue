@@ -125,15 +125,15 @@ const submitForm = async () => {
                     <img class="hidden lg:block absolute top-80" src="@/assets/images/svg/arrow-left.svg" alt="">
                     <form class="w-full mx-0 lg:mx-14" @submit.prevent="submitForm">
                         <div class="grid grid-cols-1">
-                            <label class="mb-1" for="name">Nom Prénom :</label>
+                            <label class="mb-1" for="name">Nom Prénom</label>
                             <input id="name" v-model="form.name" class="rounded-xl py-2 border-2 border-noir pl-4 mb-6 lg:mb-9" type="text" required >
                         </div>
                         <div class="grid grid-cols-1">
-                            <label class="mb-1" for="email">Email :</label>
+                            <label class="mb-1" for="email">Email</label>
                             <input id="email" v-model="form.email" class="rounded-xl py-2 border-2 border-noir pl-4 mb-6 lg:mb-9" type="email" required >
                         </div>
                         <div class="grid grid-cols-1">
-                            <label class="mb-1" for="message">Message :</label>
+                            <label class="mb-1" for="message">Message</label>
                             <textarea id="message" v-model="form.message" rows="4" class="rounded-xl py-2 border-2 border-noir pl-4 mb-9 lg:mb-16" required/>
                         </div>
                         <div class="grid grid-cols-1">
