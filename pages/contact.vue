@@ -1,4 +1,12 @@
 <script setup lang="ts">
+useSeoMeta({
+    title: 'Contact | MMI Montbéliard',
+    description: 'Contactez le département MMI de Montbéliard pour toute information sur nos formations, parcours, événements ou pour échanger avec notre équipe. Trouvez ici les coordonnées et moments de rencontre, comme la Journée Portes Ouvertes.',
+    
+});
+//ogImage: heroImg
+
+
 const form = ref({
   name: '',
   email: '',

@@ -2,6 +2,12 @@
 import type { SanityDocument } from '@sanity/client';
 import departementHero from '@/assets/images/bitmap/home-test.png';
 
+useSeoMeta({
+    title: 'Le département | MMI Montbéliard',
+    description: "Découvrez l'actualité du département MMI de Montbéliard : témoignages d'étudiants, événements, projets et réussites, mettant en lumière l'engagement et l'innovation au cœur de la formation multimédia et numérique.",
+    ogImage: departementHero
+});
+
 const ACTUALITES_QUERY = groq`*[_type == "actualite"] | order(publishedAt desc)[0...2] {
     _id,
     title,

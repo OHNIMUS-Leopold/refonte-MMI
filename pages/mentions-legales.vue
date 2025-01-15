@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import heroImg from '@/assets/images/bitmap/hero-mentions.png';
+
+useSeoMeta({
+    title: 'Mentions légales | MMI Montbéliard',
+    description: 'Consultez les mentions légales du département MMI de Montbéliard pour en savoir plus sur les informations juridiques, les conditions d’utilisation du site, et la protection de vos données personnelles.',
+    ogImage: heroImg
+});
 </script>
 
 

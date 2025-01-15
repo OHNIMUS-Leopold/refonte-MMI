@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import heroImg from '@/assets/images/bitmap/hero-candidater.png';
 import candidaterImg from '@/assets/images/bitmap/candidater-section.png';
+
+useSeoMeta({
+    title: 'Candidater | MMI Montbéliard',
+    description: 'Candidater au département MMI de Montbéliard, que ce soit via Parcoursup ou eCandidat : toutes les informations nécessaires pour soumettre votre dossier et rejoindre une formation innovante en multimédia et communication numérique.',
+    ogImage: heroImg
+});
+
 </script>
 
 <template>
