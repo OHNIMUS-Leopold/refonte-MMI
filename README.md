@@ -1,75 +1,45 @@
-# Nuxt Minimal Starter
+# Département MMI de Montbéliard
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Site codé sur mesure pour présenter le Département MMI (Métiers du Multimédia et de l'Internet) de Montbéliard. Ce site met en avant les formations, les projets étudiants et les actualités du département.
 
-## Setup
+Projet réalisé par le groupe EAL pour le projet Refonte MMI.
 
-Make sure to install dependencies:
+---
 
-```bash
-# npm
-npm install
+## Présentation de l'équipe
 
-# pnpm
-pnpm install
+L'équipe EAL se compose de trois étudiants, chacun assumant un rôle spécifique dans la réalisation de ce projet :
 
-# yarn
-yarn install
+### Evan Moulin : Chef de projet et Designer
 
-# bun
-bun install
-```
+- **Mission :** Coordination globale du projet et création des maquettes du site pour une expérience utilisateur optimale. Conception d'une identité visuelle reflétant l'image du département.
 
-## Development Server
+### Alban Luc : Designer
 
-Start the development server on `http://localhost:3000`:
+- **Mission :** Conception graphique des éléments visuels du site et amélioration de l'ergonomie pour offrir une navigation intuitive.
 
-```bash
-# npm
-npm run dev
+### Léopold Ohnimus : Développeur
 
-# pnpm
-pnpm dev
+- **Mission :** Développement du site depuis zéro, gestion technique et maintenance pour assurer un fonctionnement fluide.
 
-# yarn
-yarn dev
+---
 
-# bun
-bun run dev
-```
+## Notre commanditaire
 
-## Production
+Le projet est réalisé en collaboration avec **Xavier Senente**, représentant du Département MMI de Montbéliard, dans le cadre d'un exercice pédagogique visant à moderniser l'image du département.
 
-Build the application for production:
+---
 
-```bash
-# npm
-npm run build
+## Objectif du projet
 
-# pnpm
-pnpm build
+- Moderniser le site web du département avec un design attrayant et intuitif.
+- Mettre en lumière les projets étudiants et les formations proposées.
+- Renforcer la visibilité du département pour attirer de nouveaux étudiants et partenaires.
 
-# yarn
-yarn build
+---
 
-# bun
-bun run build
-```
+## Commanditaire
 
-Locally preview production build:
+**Xavier Senente**, représentant du Département MMI de Montbéliard.
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- **Rôle :** Responsable de l'orientation stratégique et de la validation des étapes clés du projet.

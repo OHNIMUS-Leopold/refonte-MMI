@@ -104,8 +104,8 @@ function onVideoEnded() {
 <template>
     <main>
         <div class="hidden xl:block">
-            <div v-show="allLoaded" class="relative w-full h-screen flex items-center justify-center bg-noir">
-                <div class="relative w-screen overflow-hidden">
+            <div v-show="allLoaded" class="relative w-[98%] mx-[1%] mt-[1%] h-full flex items-center justify-center bg-white">
+                <div class="relative overflow-hidden ">
                     <video
                         v-for="video in allVideos"
                         v-show="currentVideo === video.name"
@@ -115,11 +115,11 @@ function onVideoEnded() {
                         autoplay
                         muted
                         loop
-                        class="w-full h-full"
+                        class="w-full h-full rounded-xl"
                         @ended="onVideoEnded"
                     />
                 </div>
-                <div class="absolute top-1/2 translate-y-1/4 w-4/5 flex justify-between">
+                <div class="absolute top-1/2 -translate-y-1/3 w-4/5 flex justify-between">
                     <LandingButtonAction
                         v-for="year in otherYears"
                         :key="year"
@@ -136,7 +136,7 @@ function onVideoEnded() {
                         années
                     </LandingButtonAction>
                 </div>
-                <div class="absolute flex flex-col gap-2 items-center -translate-y-1/4 top-1/2 bg-gris rounded-xl py-6 px-14 ">
+                <div class="absolute flex flex-col gap-2 items-center -translate-y-2/4 top-1/2 bg-gris rounded-xl py-6 px-14 ">
                     <img class="w-64" src="../assets/images/svg/mmi_logo-white.svg" alt="Logo MMI">
                     <h1 class="uppercase font-poppins font-bold text-4xl text-white">La Formation</h1>
                 </div>
