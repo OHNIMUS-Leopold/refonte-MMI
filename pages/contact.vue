@@ -139,8 +139,8 @@ const submitForm = async () => {
                         <div class="grid grid-cols-1">
                             <button class="bg-jaune text-white font-poppins font-bold text-xl lg:text-3xl py-2 rounded-xl hover:text-jaune hover:bg-white border-[2px] border-solid border-jaune duration-500" type="submit">Envoyer</button>
                         </div>
-                        <img class="hidden lg:block absolute right-0 top-44" src="@/assets/images/svg/arrow-right.svg" alt="">
                     </form>
+                    <img class="hidden lg:block absolute right-0 top-44" src="@/assets/images/svg/arrow-right.svg" alt="">
                 </div>
             </section>
         </div>
