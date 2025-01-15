@@ -135,7 +135,7 @@ watch(showGame, (newValue) => {
         <main>
             <section class="hidden xl:flex flex-col text-center my-56" :class="{ 'py-96': showGame }">
                 <div :class="{ 'block': !showGame, 'hidden': showGame }">
-                    <button @click="toggleGame" class="contents">
+                    <button class="contents" @click="toggleGame">
                         <p class="font-manrope text-jaune font-medium text-[250px] hover:text-noir duration-500" style="text-shadow: 0px 18px 4px rgba(0, 0, 0, 0.25);">404</p>
                     </button>
                     <h1 class="text-noir font-manrope font-bold text-7xl mt-32 mb-7 relative w-fit mx-auto">
@@ -166,13 +166,13 @@ watch(showGame, (newValue) => {
                         Vous pouvez retourner à la <RouterLink to="/" class="text-jaune duration-500 hover:text-noir">page d'accueil</RouterLink> ou utiliser le menu pour naviguer sur notre site. Si vous avez besoin d'aide, n'hésitez pas à nous contacter.<br>
                         Merci de votre compréhension !
                     </p>
-                    <div class="absolute top-0 bg-jaune w-full h-20"></div>
+                    <div class="absolute top-0 bg-jaune w-full h-20"/>
                 </div>
             </section>
 
             <section class="absolute top-40 left-1/2 -translate-x-1/2" :class="{ 'block': showGame, 'hidden': !showGame }">
-                <canvas id="gc" :width="canvasWidth" :height="canvasHeight"></canvas>
-                <button @click="toggleGame" class="text-4xl absolute left-1/2 mt-5 -translate-x-1/2 border-2 border-solid border-noir hover:border-jaune duration-500 text-noir hover:text-jaune rounded-full p-10">
+                <canvas id="gc" :width="canvasWidth" :height="canvasHeight"/>
+                <button class="text-4xl absolute left-1/2 mt-5 -translate-x-1/2 border-2 border-solid border-noir hover:border-jaune duration-500 text-noir hover:text-jaune rounded-full p-10" @click="toggleGame">
                     <div class="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 pb-2">🗙</div>
                 </button>
             </section>
