@@ -1,12 +1,26 @@
 <script setup lang="ts">
 import SlidingText from '~/components/slidingText.vue';
 import heroImg from '@/assets/images/bitmap/home-test.png';
+import type { SanityDocument } from '@sanity/client';
 
 useSeoMeta({
     title: 'Accueil | MMI Montbéliard',
     description: 'Découvrez le département MMI de Montbéliard : une formation innovante en multimédia, web et communication pour préparer les talents de demain aux métiers du numérique.',
     ogImage: heroImg
 });
+
+const PROJETS_QUERY = groq`*[_type == "projet"] | order(date desc)[0...2] {
+    _id,
+    name,
+    date,
+    description,
+    image,
+    etiquetteMax2
+}`;
+
+const { data: projets } = await useSanityQuery<SanityDocument[]>(PROJETS_QUERY);
+
+const {urlFor} = useSanityImage();
 
 const containerHeight = ref(0);
 
@@ -84,11 +98,24 @@ onUnmounted(() => {
         <SlidingText />
 
         <div class="margin">
-            <section class="my-36">
+            <section class="mb-12 md:mb-24">
                 <AnimatedHeading class="text-noir mb-8" title="Donnez vie à des projets ambitieux" />
                 <p class="text-noir my-5 xl:m-0">
                     Ces témoignages reflètent le parcours de nos étudiants, qui ont su tirer parti de notre formation pour s’épanouir dans le secteur numérique et la communication.
                 </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-[150px] xl:gap-[250px] mx-0 lg:mx-20 xl:mx-36 mt-5">
+                    <div v-for="projet in projets" :key="projet._id" class="">
+                        <div class="rounded-3xl overflow-hidden flex flex-col relative h-[500px]">
+                            <img v-if="projet.image" :src="urlFor(projet.image)!.url()" :alt="projet.title" class="object-cover w-full h-full">
+                            <div class="absolute bottom-0 flex flex-col justify-end ml-5 mb-5 md:ml-6 md:mb-6">
+                                <p class="text-white font-poppins text-2xl md:text-3xl font-semibold">{{ projet.name }}</p>
+                                <div v-if="projet.etiquetteMax2 && projet.etiquetteMax2.length" class="flex flex-wrap space-x-4 mt-2 md:mt-3">
+                                    <p v-for="etiquette in projet.etiquetteMax2" :key="etiquette" class="tag font-manrope font-medium text-xs md:text-base rounded-3xl text-white py-2 md:py-3 px-4 md:px-6 border-solid border-[1px] border-white">{{ etiquette }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section>
