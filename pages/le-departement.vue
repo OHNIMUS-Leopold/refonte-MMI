@@ -53,7 +53,7 @@ const {urlFor} = useSanityImage()
                     </p>
                 </div>
                 <div class="col-span-2 xl:place-self-end w-full h-full" >
-                    <iframe class="w-full h-full mx-auto"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.714464850608!2d6.802704075879118!3d47.495475595645296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4792172655793f9f%3A0x1b3b0f76560084ad!2sD%C3%A9partement%20MMI%20de%20Montb%C3%A9liard!5e0!3m2!1sfr!2sfr!4v1736928381232!5m2!1sfr!2sfr" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="w-full h-full mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.714464850608!2d6.802704075879118!3d47.495475595645296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4792172655793f9f%3A0x1b3b0f76560084ad!2sD%C3%A9partement%20MMI%20de%20Montb%C3%A9liard!5e0!3m2!1sfr!2sfr!4v1736928381232!5m2!1sfr!2sfr" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
                     <div class="grid grid-cols-3 my-2">
                         <p class="col-span-2 text-noir text-sm">
                             4 place Tharradin 25200 Montbéliard
@@ -97,11 +97,12 @@ const {urlFor} = useSanityImage()
             <section class="mb-12 md:mb-24">
                 <AnimatedHeading class="text-noir mb-8" title="Avis & Retours de nos étudiants" />
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 md:gap-10 xl:gap-36">
-                    <div class="border-noir border-2 rounded-3xl p-10 md:py-16 md:px-28" v-for="temoignage in temoignages" :key="temoignage._id">
-                        <p class="relative text-noir font-manrope text-lg md:text-xl font-normal">{{ temoignage.description }}
-                            <div class="absolute -top-6 -right-5 md:-right-8">
+                    <div v-for="temoignage in temoignages" :key="temoignage._id" class="border-noir border-2 rounded-3xl p-10 md:py-16 md:px-28">
+                        <p class="relative text-noir font-manrope text-lg md:text-xl font-normal">
+                            {{ temoignage.description }}
+                            <span class="absolute -top-6 -right-5 md:-right-8">
                                 <img class="" src="@/assets/images/svg/3lines-y.svg" alt="">
-                            </div>
+                            </span>
                         </p>
                         <p class="mt-5 text-noir font-manrope text-lg md:text-xl font-normal">― {{ temoignage.firstName }}, diplômé(e) en {{ temoignage.graduationYear }}</p>
                     </div>
@@ -112,7 +113,7 @@ const {urlFor} = useSanityImage()
             <section>
                 <AnimatedHeading class="text-noir mb-3 md:mb-8" title="Corps enseignant" />
                 <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-40">
-                    <div class="grid grid-cols-3 mt-5" v-for="prof in profs" :key="prof._id">
+                    <div v-for="prof in profs" :key="prof._id" class="grid grid-cols-3 mt-5">
                         <img v-if="prof.roundImage" :src="urlFor(prof.roundImage)!.url()" :alt="prof.name" class="">
                         <div class="col-span-2 text-noir text-center place-self-center mx-3">
                             <p class="font-bold font-poppins text-lg md:text-2xl mb-1">{{ prof.name }}</p>
