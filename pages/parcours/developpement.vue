@@ -35,8 +35,7 @@ const {urlFor} = useSanityImage()
                 :image-src="devSection"
                 image-alt="Photo de code"
                 style="margin-bottom: 20px;"
-                >                
-            </SimpleSection>    
+                />    
 
             <section class="my-12 md:my-24">
                 <AnimatedHeading class="text-noir mb-8" title="Les différents cours" />
