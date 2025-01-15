@@ -2,6 +2,18 @@
 import alternanceImg from '@/assets/images/bitmap/stage-alternance.png';
 import vanierImg from '@/assets/images/bitmap/cgep-vanier-grand.png';
 import heroImg from '@/assets/images/bitmap/hero-formation.png';
+import type { SanityDocument } from '@sanity/client';
+
+const ALUMNIS_QUERY = groq`*[_type == "alumni"] | {
+    _id,
+    name,
+    specialization,
+    roundImage
+}`;
+
+const { data: alumnis } = await useSanityQuery<SanityDocument[]>(ALUMNIS_QUERY);
+
+const {urlFor} = useSanityImage()
 
 
 const currentYear = ref(1);
@@ -128,7 +140,7 @@ function onVideoEnded() {
             </div>
         </div>
 
-        <MyHero class="xl:hidden" :image=heroImg alt="Bâtiment MMI" title="MMI Montbéliard"/>
+        <MyHero class="xl:hidden" :image=heroImg alt="Les étudiants de MMI" title="La formation"/>
 
         <div class="margin xl:pt-10">
             
@@ -173,7 +185,7 @@ function onVideoEnded() {
                 style="margin-bottom: 20px;"
             />      
 
-            <div class="flex justify-center xl:justify-start">
+            <div class="flex justify-center xl:justify-start mb-12 md:mb-24">
                 <TransparentButtonY class="hidden md:block w-fit" to="/international">
                     Découvrir
                 </TransparentButtonY>
@@ -181,6 +193,19 @@ function onVideoEnded() {
                     Découvrir
                 </TransparentButtonYMini>
             </div>
+
+            <section>
+                <AnimatedHeading class="text-noir mb-3 md:mb-8" title="Alumnis" />
+                <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-40">
+                    <div v-for="alumni in alumnis" :key="alumni._id" class="grid grid-cols-3 mt-5">
+                        <img v-if="alumni.roundImage" :src="urlFor(alumni.roundImage)!.url()" :alt="alumni.name" class="">
+                        <div class="col-span-2 text-noir text-center place-self-center mx-3">
+                            <p class="font-bold font-poppins text-lg md:text-2xl mb-1">{{ alumni.name }}</p>
+                            <p class="">{{ alumni.specialization }}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 </template>
