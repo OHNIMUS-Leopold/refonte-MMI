@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import heroImg from '@/assets/images/bitmap/hero-mentions.png';
+import { RouterLink } from 'vue-router';
 
 useSeoMeta({
     title: 'Mentions légales | MMI Montbéliard',
@@ -56,7 +57,7 @@ useSeoMeta({
             <p class="text-noir mt-1 mb-6 md:mt-3 md:mb-8">
                 Ce site peut recueillir des données personnelles via des formulaires de contact ou
                 d’inscription. Ces informations sont traitées conformément à notre politique de
-                confidentialité, accessible [lien vers la politique de confidentialité].
+                confidentialité, accessible <RouterLink class="text-jaune hover:text-noir duration-500" to="/confidentialite">ici !</RouterLink>
             </p>
             <h3 class="text-noir uppercase">
                 Cookies
